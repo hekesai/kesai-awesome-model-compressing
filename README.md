@@ -28,19 +28,19 @@
 
 * #### MobileNets
 
-  ##### 1、Efficient Convolutional Neural Networks for Mobile Vision Applications [MobileNets](https://arxiv.org/abs/1704.04861)
+  ##### 1、[Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861)
 
-  ##### 2、MobileNetV2: Inverted Residuals and Linear Bottlenecks [MobileNetV2](https://arxiv.org/pdf/1801.04381.pdf)
+  ##### 2、[MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/pdf/1801.04381.pdf)
 
-  ##### 3、Searching for MobileNetV3 [MobileNetV3](https://arxiv.org/pdf/1905.02244.pdf) 
+  ##### 3、[Searching for MobileNetV3](https://arxiv.org/pdf/1905.02244.pdf) 
 
 * #### ShuffleNets
 
-  ##### 1、An Extremely Efficient Convolutional Neural Network for Mobile Devices [ShuffleNet](https://arxiv.org/abs/1707.01083)
+  ##### 1、[An Extremely Efficient Convolutional Neural Network for Mobile Devices](https://arxiv.org/abs/1707.01083)
 
-  ##### 2、ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design [ShuffleNet V2](https://arxiv.org/abs/1807.11164)
+  ##### 2、[ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design](https://arxiv.org/abs/1807.11164)
 
-  ##### 3、ShuffleNetV2+：[paper unrelease](https://github.com/hekesai/real-time-network/blob/master)
+  ##### 3、[ShuffleNetV2+](https://github.com/hekesai/real-time-network/blob/master)
 
 * #### Others
 
