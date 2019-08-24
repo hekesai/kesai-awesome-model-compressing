@@ -90,7 +90,7 @@
 
 * #### Papers
 
-  #####1、[Speeding up convolutional neural networks with low rank expansions](http://www.robots.ox.ac.uk/~vgg/publications/2014/Jaderberg14b/jaderberg14b.pdf) 
+  ##### 1、[Speeding up convolutional neural networks with low rank expansions](http://www.robots.ox.ac.uk/~vgg/publications/2014/Jaderberg14b/jaderberg14b.pdf) 
 
   ##### adding...
 
@@ -98,7 +98,7 @@
 
 * #### Papers
 
-  #####1、 [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)
+  ##### 1、 [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)
 
   #### adding...
 
