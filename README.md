@@ -112,7 +112,7 @@
 
   ##### Some training frameworks such as TensorFlow have integrated TensorRT so that it can be used to accelerate inference within the framework. Alternatively, TensorRT can be used as a library within a user application. It includes parsers for importing existing models from Caffe, ONNX, or TensorFlow, and C++ and Python APIs for building models programmatically. （搬抄官网）
 
-  #####*Figure 1. TensorRT is a high performance neural network inference optimizer and runtime engine for production deployment.*
+  ##### *Figure 1. TensorRT is a high performance neural network inference optimizer and runtime engine for production deployment.*
 
   ![Alt text](img/tensorRT2.png)
 
