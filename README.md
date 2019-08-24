@@ -88,15 +88,19 @@
 
 ### Part 2-4 ：Low-rank Approximation
 
-##### 1、[Speeding up convolutional neural networks with low rank expansions](http://www.robots.ox.ac.uk/~vgg/publications/2014/Jaderberg14b/jaderberg14b.pdf)
+* #### Papers
 
-##### adding...
+  #####1、[Speeding up convolutional neural networks with low rank expansions](http://www.robots.ox.ac.uk/~vgg/publications/2014/Jaderberg14b/jaderberg14b.pdf) 
+
+  ##### adding...
 
 ### Part 2-5 ：Teacher-student Network（Distillation）
 
-##### 1、[Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)
+* #### Papers
 
-##### adding...
+  #####1、 [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)
+
+  #### adding...
 
 ## Part 3 ：tools
 
