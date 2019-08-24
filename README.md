@@ -108,6 +108,14 @@
 
 * #### 简介
 
+  ##### The core of TensorRT™ is a C++ library that facilitates high performance inference on NVIDIA graphics processing units (GPUs). It is designed to work in a complementary fashion with training frameworks such as TensorFlow, Caffe, PyTorch, MXNet, etc. It focuses specifically on running an already trained network quickly and efficiently on a GPU for the purpose of generating a result (a process that is referred to in various places as scoring, detecting, regression, or inference). 
+
+  ##### Some training frameworks such as TensorFlow have integrated TensorRT so that it can be used to accelerate inference within the framework. Alternatively, TensorRT can be used as a library within a user application. It includes parsers for importing existing models from Caffe, ONNX, or TensorFlow, and C++ and Python APIs for building models programmatically. （搬抄官网）
+
+  #####*Figure 1. TensorRT is a high performance neural network inference optimizer and runtime engine for production deployment.*
+
+  ![Alt text](img/tensorRT2.png)
+
 * #### 框架介绍
 
 * #### 基本原理
@@ -126,9 +134,30 @@
 
  ![Alt text](img/tensorRT1.png)
 
+* #### TensorRT如何优化重构模型？
 
+| 条件                                     | 方法                                                         |
+| ---------------------------------------- | :----------------------------------------------------------- |
+| 若训练的网络模型包含TensorRT支持的操作   | 1、对于Caffe与TensorFlow训练的模型，若包含的操作都是TensorRT支持的，则可以直接由TensorRT优化重构 |
+|                                          | 2、对于MXnet, PyTorch或其他框架训练的模型，若包含的操作都是TensorRT支持的，可以采用TensorRT API重建网络结构，并间接优化重构； |
+| 若训练的网络模型包含TensorRT不支持的操作 | 1、TensorFlow模型可通过tf.contrib.tensorrt转换，其中不支持的操作会保留为TensorFlow计算节点； |
+|                                          | 2、不支持的操作可通过Plugin API实现自定义并添加进TensorRT计算图； |
+|                                          | 3、将深度网络划分为两个部分，一部分包含的操作都是TensorRT支持的，可以转换为TensorRT计算图。另一部则采用其他框架实现，如MXnet或PyTorch； |
 
 * #### 性能
+
+  #### 以下是在TitanX (Pascal)平台上，TensorRT对大型分类网络的优化加速效果：
+
+  | Network   | Precision | Framework/GPU:TitanXP | Avg.Time(Batch=8,unit:ms) | Top1 Val.Acc.(ImageNet-1k) |
+  | --------- | --------- | --------------------- | ------------------------- | -------------------------- |
+  | Resnet50  | fp32      | TensorFlow            | 24.1                      | 0.7374                     |
+  | Resnet50  | fp32      | MXnet                 | 15.7                      | 0.7374                     |
+  | Resnet50  | fp32      | TRT4.0.1              | 12.1                      | 0.7374                     |
+  | Resnet50  | int8      | TRT4.0.1              | 6                         | 0.7226                     |
+  | Resnet101 | fp32      | TensorFlow            | 36.7                      | 0.7612                     |
+  | Resnet101 | fp32      | MXnet                 | 25.8                      | 0.7612                     |
+  | Resnet101 | fp32      | TRT4.0.1              | 19.3                      | 0.7612                     |
+  | Resnet101 | int8      | TRT4.0.1              | 9                         | 0.7574                     |
 
 ### Part 3-2 ：[PocketFlow](https://github.com/Tencent/PocketFlow)
 
