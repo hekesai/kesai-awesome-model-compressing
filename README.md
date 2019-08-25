@@ -40,20 +40,8 @@
 
   ##### 2、[ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design](https://arxiv.org/abs/1807.11164)
 
-  ##### 3、[ShuffleNetV2+](https://github.com/hekesai/real-time-network/blob/master)对比
+  ##### 3、[ShuffleNetV2+](https://github.com/hekesai/real-time-network/blob/master)
 
-* | 网络结构          | TOP1 准确率/% | 参数量/M | CPU运行时间/ms |
-| ----------------- | ------------- | -------- | -------------- |
-  | MobileNet V1      | 70.6          | 4.2      | 123            |
-  | ShuffleNet(1.5)   | 69.0          | 2.9      | -              |
-  | ShuffleNet(x2)    | 70.9          | 4.4      | -              |
-  | MobileNet V2      | 71.7          | 3.4      | 80             |
-  | MobileNet V2(1.4) | 74.7          | 6.9      | 149            |
-  
-  ### 
-  
-  ### 
-  
 * #### SqueenzeNet
 
   ##### [SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size](SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size)
