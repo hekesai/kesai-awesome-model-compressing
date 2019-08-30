@@ -203,15 +203,23 @@
 
   ##### 在 CIFAR-10 数据集上，PocketFlow 以 ResNet-56 作为基准模型进行通道剪枝，并加入了超参数优化和网络蒸馏等训练策略，实现了 2.5 倍加速下分类精度损失 0.4%，3.3 倍加速下精度损失 0.7%，且显著优于未压缩的 ResNet-44 模型； 在 ImageNet 数据集上，PocketFlow 可以对原本已经十分精简的 MobileNet 模型继续进行权重稀疏化，以更小的模型尺寸取得相似的分类精度；与 Inception-V1、ResNet-18 等模型相比，模型大小仅为后者的约 20~40%，但分类精度基本一致（甚至更高）。
 
+  ![Alt text](img/packflow3.jpg)
+  
   ![Alt text](img/packflow2.jpg)
-
-​                      ![Alt text](img/packflow3.jpg)
+  
+   
 
 ##### 相比于费时费力的人工调参，PocketFlow 框架中的 AutoML 自动超参数优化组件仅需 10 余次迭代就能达到与人工调参类似的性能，在经过 100 次迭代后搜索得到的超参数组合可以降低约 0.6% 的精度损失；通过使用超参数优化组件自动地确定网络中各层权重的量化比特数，PocketFlow 在对用于 ImageNet 图像分类任务的 ResNet-18 模型进行压缩时，取得了一致性的性能提升；当平均量化比特数为 4 比特时，超参数优化组件的引入可以将分类精度从 63.6% 提升至 68.1%（原始模型的分类精度为 70.3%）。
 
-​                      ![Alt text](img/packflow4.jpg)
+![Alt text](img/packflow4.jpg)
 
-​                       ![Alt text](img/packflow5.jpg)
+![Alt text](img/packflow5.jpg)
+
+
+
+
+
+
 
 ### Part 3-3 ：[PaddleSlim](https://github.com/PaddlePaddle/models/tree/v1.4/PaddleSlim)
 
